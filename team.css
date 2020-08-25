@@ -1,0 +1,232 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 20vh;
+    background-color: #092532;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: Montserrat;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 5.5rem;
+    letter-spacing: 6px;
+    color: #89c9b8;
+    align-self: flex-start;
+}
+
+header nav {
+    align-self: flex-end;
+    margin-bottom: 1%;
+    margin-right: 0;
+    width: 60%;
+}
+
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    color: #092532;
+    background-color: #89c9b8;
+    border-radius: 12px;
+    padding: 1%;
+    margin: 1% 2%;
+    transition-property: color background-color;
+    transition-duration: 30ms;
+    transition-duration: 300ms;
+}
+
+header nav a:hover {
+    background-color: #092532;
+    color: #89c9b8;
+}
+
+/* TEAM PHOTOS */
+
+
+h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 5rem;
+    margin-top: 5%;
+    color: #092532;
+}
+
+h3 {
+    font-size: 2.6rem;
+    font-family: Montserrat;
+    margin: 2% auto;
+    color: #092532
+}
+
+.team-photos div p {
+    font-family: roboto;
+    display: inline-block;
+    width: 90%;
+    margin: 3% auto;
+    font-size: 1.8rem;
+    color: #092532;
+    padding: 4%;
+    border-radius: 20px;
+    background-color: #dffff6;
+    border: solid 3px #092532;
+}
+.team-photos {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-photos div {
+    text-align: center;
+    width: 27%;
+}
+
+.team-photos div img {
+    height: 50%;
+    width: auto;
+}
+
+.fab {
+    transform: scale(4);
+    margin: 5% 8%;
+    color: #092532;
+    transition-property: color;
+    transition-delay: 50ms;
+    transition-duration: 300ms;
+}
+
+.fab:hover {
+    color: #89c9b8;
+}
+
+
+
+/* 2ND PHOTO AREA */
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.photos div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.photos div img {
+    height: 75%;
+    width: 50%;
+}
+
+.photos div p {
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 10px;
+    border: solid 3px #092532;
+    width: 45%;
+    font-size: 2.3rem;
+    font-family: montserrat;
+    color: #092532;
+    display: inline-block;
+    background-color: #dffff6;
+    height: 30%;
+}
+
+/* FOOTER */ 
+
+footer {
+    height: 25vh;
+    background-color: #092532;
+    text-align: right;
+}
+
+footer p {
+    font-family: Montserrat;
+    margin-left: 3%;
+    font-size: 5.5rem;
+    letter-spacing: 6px;
+    color: #89c9b8;
+    text-align: right;
+    padding: 2%;
+}
+
+footer .nav-links {
+    display: flex;
+}
+
+footer .nav-links a {
+    color: #89c9b8;
+    text-decoration: none;
+    margin: 0 2%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    transition-property: color;
+    transition-delay: 50ms;
+    transition-duration: 400ms;
+}
+
+footer .nav-links a:hover {
+color: #e1ffc2;
+}
