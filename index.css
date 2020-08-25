@@ -86,7 +86,7 @@ header nav a {
     background-color: #89c9b8;
     border-radius: 12px;
     padding: 1%;
-    margin: 0 2%;
+    margin: 1% 2%;
     transition-property: color background-color;
     transition-duration: 50ms;
     transition-duration: 400ms;
@@ -216,6 +216,75 @@ footer .nav-links a:hover {
 color: #e1ffc2;
 }
 
+/* H1 FIX FOR BETWEEN 1230-800 PX */
+
+@media (max-width: 1230px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media (max-width: 800px) {
+
+    /* HEADER */
+
+    header {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 5rem;
+        align-self: center;
+    }
+    
+    header nav {
+        align-self: center;
+        margin-bottom: 1%;
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    header nav a {
+        width: 30%;
+        font-size: 2rem;
+        padding: 1% 0;
+        margin: 1.5% auto;
+        text-align: center;
+    }
+
+    /* PHOTO GRID AREA */
+
+    .photos {
+        height: 250vh;
+    }
+    .photos div {
+        width: 48%;
+    }
+    .photos div img {
+        height: 65%;
+    }
+
+    /* FOOTER */
+
+    footer nav a {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+}
+
 /* MEDIA QUERY FOR MOBILE */
 
 @media (max-width: 480px) {
@@ -223,12 +292,7 @@ color: #e1ffc2;
     /* HEADER */
 
     header {
-        width: 100%;
         height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
     
     h1 {
@@ -327,7 +391,6 @@ footer p {
     margin: 2% 0;
     font-size: 2.5rem;
     letter-spacing: 3px;
-    text-align: center;
     padding: 2%;
 }
 
@@ -345,3 +408,4 @@ footer .nav-links a {
 }
 
 }
+
