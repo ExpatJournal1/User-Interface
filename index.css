@@ -170,11 +170,12 @@ color: #092532;
     font-size: 2rem;
     margin: 4% 0;
     color: #092532;
+    display: inline-block;
 }
 
 .photos div img {
-    height: 75%;
-    width: 75%;
+    height: 60%;
+    width: 80%;
 }
 
 /* FOOTER */ 
@@ -224,7 +225,7 @@ color: #e1ffc2;
 }
 
 /* MEDIA QUERY FOR TABLET */
-@media (max-width: 800px) {
+@media (max-width: 862px) {
 
     /* HEADER */
 
@@ -269,24 +270,29 @@ color: #e1ffc2;
         width: 48%;
     }
     .photos div img {
-        height: 65%;
+        height: 60%;
     }
 
     /* FOOTER */
 
+    footer {
+        height: 30vh;
+    }
     footer nav a {
         text-align: center;
+        font-size: 1.5rem;
     }
 
     footer p {
         text-align: center;
+        margin-bottom: 3%;
     }
 
 }
 
 /* MEDIA QUERY FOR MOBILE */
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     
     /* HEADER */
 
@@ -295,7 +301,6 @@ color: #e1ffc2;
     }
     
     h1 {
-        font-family: Montserrat;
         margin: 1% 0;
         font-size: 3rem;
         letter-spacing: 3px;
@@ -331,7 +336,7 @@ color: #e1ffc2;
         flex-direction: column;
         width: 80%;
         margin:  0 auto;
-        margin-top: -20%;
+        margin-top: -40%;
         height: 80%;
         justify-content: space-evenly;
         align-items: center;
@@ -357,15 +362,18 @@ color: #e1ffc2;
     /*PHOTO GRID AREA */
 
 .photos {
-    margin-top: -50%;
+    margin-top: -40%;
     display: flex;
-    flex-wrap: wrap;
-    height: 200vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 375vh;
 }
 
 .photos div {
-    width: 48%;
-    margin: 1%;
+    width: 90%;
+    margin: -30%;
 }
 
 .photos div p {
@@ -375,20 +383,20 @@ color: #e1ffc2;
 }
 
 .photos div img {
-    height: 60%;
-    width: 75%;
+    height: 50%;
+    width: 100%;
 }
     
 /* FOOTER */
 
 footer {
-    height: 45vh;
+    height: 35vh;
     text-align: center;
 }
 
 footer p {
     margin: 2% 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 3px;
     padding: 2%;
 }
@@ -408,3 +416,20 @@ footer .nav-links a {
 
 }
 
+@media (max-width: 415px) {
+    .photos {
+        margin-top: -55%;
+    }
+}
+
+@media (max-width: 380px) {
+    .photos {
+        height: 300vh;
+    }
+}
+
+@media (max-width: 280px) {
+    .photos {
+        height: 250vh;
+    }
+}
