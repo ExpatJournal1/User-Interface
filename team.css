@@ -191,14 +191,19 @@ h3 {
 .photos div img {
     height: 75%;
     width: 50%;
+    border-radius: 10px;
 }
 
 .photos div:first-of-type img {
     box-shadow: 5px 5px 15px 4px #89c9b8;
+    border-top: solid 3px #092532;
+    border-left: solid 3px #092532;
 }
 
 .photos div:last-of-type img {
     box-shadow: -5px -5px 15px 4px #89c9b8;
+    border-bottom: solid 4px #092532;
+    border-right: solid 4px #092532;
 }
 
 .photos div p {
@@ -211,6 +216,39 @@ h3 {
     display: inline-block;
     height: 30%;
     line-height: 2.9rem;
+}
+
+.photos div:first-of-type p {
+    margin-top: 5%;
+    border-top: solid 3px #092532;
+    border-right: solid 3px #092532;
+    padding: 1%;
+    display: inline-block;
+    background-color: hsla(164, 37%, 66%, 0.2);
+    box-shadow: -5px 5px 10px 1px hsla(164, 37%, 66%, 0.2);
+}
+
+.photos div:last-of-type p {
+    margin-top: 5%;
+    border-left: solid 3px #092532;
+    border-bottom: solid 3px #092532;
+    padding: 1%;
+    display: inline-block;
+    background-color: hsla(164, 37%, 66%, 0.2);
+    box-shadow: 5px -5px 10px 1px hsla(164, 37%, 66%, 0.2);
+}
+
+.here {
+    text-decoration: none;
+    color: #092532;
+    font-weight: 700;
+    transition-property: text-shadow;
+    transition-delay: 20ms;
+    transition-duration: 250ms;
+}
+
+.here:hover {
+text-shadow: 1px 1px 3px #092532;
 }
 
 /* FOOTER */ 
