@@ -474,10 +474,16 @@ color: #e1ffc2;
         text-align: center;
     }
 
+    /* TEAM PHOTOS AREA */
+
+    .team-photos div {
+        width: 90%;
+    }
+
     /* 2nd PHOTOS AREA */
 
     .photos {
-        height: 120vh;
+        height: 800px;
     }
     .photos div {
         flex-direction: column;
@@ -563,11 +569,4 @@ footer .nav-links a {
 }
 
 
-/* MEDIA QUERY FOR TEAM PIX SINGLE ROW */
 
-@media (max-width: 376px) {
-    
-    .team-photos div {
-        width: 90%;
-    }
-}
