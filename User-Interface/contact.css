@@ -46,7 +46,7 @@ nav{
 
 header nav a{
     display: inline-block;
-    width: 12%;
+    width: 14%;
     flex-direction: row;
     border-radius: 12px;
     padding: 1%;
@@ -75,7 +75,7 @@ a:hover{
 
 .contact-form{
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
     padding: 8%;
 }
 
@@ -111,7 +111,7 @@ footer{
 
 footer nav a{
     display: inline-block;
-    width: 12%;
+    width: 14%;
     flex-direction: row;
     border-radius: 12px;
     padding: 1%;
@@ -124,3 +124,48 @@ footer nav a{
     font-family: montserrat, sans-serif;
 }
 
+@media (max-width: 800px){
+    header nav a{
+        width: 20%;
+        margin: 2%;
+    }
+
+    .contact-form{
+        width: 70%;
+    }
+
+    footer nav a{
+        width: 20%;
+        margin: 2%;
+    }
+
+}
+
+@media (max-width: 500px){
+    header nav a{
+        display: flex;
+        width: 25%;
+        justify-content: center;
+        margin: 1.5% auto;
+        background-color:#092532;
+        color: #89c9b8;
+        border: 1px solid white;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-btn{
+        padding: 1%;
+        width: 25%;
+    }
+
+    footer nav a{
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        margin: 1.5% auto;
+        border: 1px solid white;
+    }
+}

@@ -48,7 +48,7 @@ nav{
 
 header nav a{
     display: inline-block;
-    width: 12%;
+    width: 14%;
     flex-direction: row;
     border-radius: 12px;
     padding: 1%;
@@ -80,6 +80,13 @@ header nav a{
     font-family: roboto, sans-serif;
 }
 
+h2{
+    margin: 0 auto;
+    font-size: 4rem;
+    color:#092532 ;
+    font-family: montserrat, sans-serif;
+}
+
 p{
     color:#092532;
     text-align: center;
@@ -102,7 +109,7 @@ footer{
 
 footer nav a{
     display: inline-block;
-    width: 12%;
+    width: 14%;
     flex-direction: row;
     border-radius: 12px;
     padding: 1%;
@@ -121,6 +128,22 @@ a:hover{
     color: #092532;
 }
 
+@media (max-width: 800px){
+    header nav a{
+        width: 20%;
+        margin: 2%;
+    }
+
+    footer nav a{
+        width: 20%;
+        margin: 2%;
+    }
+
+    p{
+        width: 80%;
+    }
+}
+
 
 @media (max-width: 500px){
     header nav a{
@@ -134,9 +157,9 @@ a:hover{
     }
 
     p{
-        width: 90%;
+        width: 100%;
     }
-
+    
     footer nav a{
         display: flex;
         width: 20%;
