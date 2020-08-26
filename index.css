@@ -184,6 +184,7 @@ color: #092532;
     margin: 4% 0;
     color: #092532;
     display: inline-block;
+    text-shadow: 3px 3px 5px hsla(164, 37%, 66%, 0.6);
 }
 
 .photos div img {
