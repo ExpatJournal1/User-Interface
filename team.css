@@ -191,7 +191,6 @@ h3 {
 .photos div img {
     height: 75%;
     width: 50%;
-    border-radius: 10px;
 }
 
 .photos div:first-of-type img {
@@ -223,16 +222,18 @@ h3 {
     border-top: solid 3px #092532;
     border-right: solid 3px #092532;
     padding: 1%;
+    height: 50%;
     display: inline-block;
     background-color: hsla(164, 37%, 66%, 0.2);
     box-shadow: -5px 5px 10px 1px hsla(164, 37%, 66%, 0.2);
 }
 
 .photos div:last-of-type p {
-    margin-top: 5%;
+    margin-top: 0;
     border-left: solid 3px #092532;
     border-bottom: solid 3px #092532;
     padding: 1%;
+    height: 50%;
     display: inline-block;
     background-color: hsla(164, 37%, 66%, 0.2);
     box-shadow: 5px -5px 10px 1px hsla(164, 37%, 66%, 0.2);
@@ -289,10 +290,9 @@ footer .nav-links a:hover {
 color: #e1ffc2;
 }
 
-/* MEDIA QUERY FOR TABLET */
-@media (max-width: 800px) {
+/* MEDIA QUERY FOR HEADER FIX */
 
-    /* HEADER */
+@media (max-width: 1308px) {
 
     header {
         width: 100%;
@@ -325,12 +325,53 @@ color: #e1ffc2;
         margin: 1.5% auto;
         text-align: center;
     }
+}
+
+/* MEDIA QUERY FOR BOTTOM TEXT BOXES FIX */
+
+@media (max-width: 1138px) {
+
+    .photos div:first-of-type p {
+        margin-top: 5%;
+        padding: 1%;
+        height: 60%;
+    }
+
+    .photos div:last-of-type p {
+        margin-top: 0;
+        padding-top: 5%;
+        height: 75%;
+    }
+}
+
+/* 2ND MEDIA QUERY FOR BOTTOM TEXT BOXES FIT */
+
+@media (max-width: 1030px) {
+
+    .photos div:first-of-type p {
+        margin-top: 0;
+        padding: 1%;
+        height: 60%;
+        font-size: 1.7rem;
+    }
+
+    .photos div:last-of-type p {
+        margin-top: 0;
+        padding-top: 2%;
+        height: 60%;
+        font-size: 1.7rem;
+    }
+}
+
+
+/* MEDIA QUERY FOR TABLET */
+@media (max-width: 842px) {
+
+    /* TEAM PHOTOS AREA */
 
     .fab {
         transform: scale(3.2);
     }
-
-    /* TEAM PHOTOS AREA */
 
     .team-photos div {
         width: 48%;
@@ -365,6 +406,40 @@ color: #e1ffc2;
 
 }
 
+/* MEDIA QUERY FOR BOTTOM TEXT BOX FIX */
+
+@media (max-width: 700px) {
+
+    .photos div:first-of-type p {
+
+        height: 75%;
+        font-size: 1.5rem;
+    }
+
+    .photos div:last-of-type p {
+
+        height: 75%;
+        font-size: 1.5rem;
+    }
+}
+
+/* MEDIA QUERY FOR BOTTOM TEXT BOX FIX */
+
+@media (max-width: 611px) {
+    .photos div:first-of-type p {
+        margin-top: 0;
+        padding: 1%;
+        height: 87%;
+        font-size: 1.4rem;
+    }
+
+    .photos div:last-of-type p {
+        margin-top: 0;
+        height: 87%;
+        font-size: 1.4rem;
+    }
+}
+
 /* MEDIA QUERY FOR MOBILE */
 
 @media (max-width: 480px) {
@@ -394,8 +469,8 @@ color: #e1ffc2;
     header nav a {
         width: 50%;
         font-size: 2rem;
-        padding: 0;
-        margin: 1.5% auto;
+        padding: .5% 0;
+        margin: 2.5% auto;
         text-align: center;
     }
 
@@ -412,17 +487,43 @@ color: #e1ffc2;
     .photos div p {
         width: 100%;
         line-height: 1.7rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
-    .photos div img {
+    .photos div:first-of-type img {
+        border-top: solid 5px #092532;
+        border-right: solid 5px #092532;
+        border-left: solid 5px #092532;
+        box-shadow: 0px 10px 15px 5px hsla(164, 37%, 66%, 0.2);
         width: 90%;
         margin: 5% auto;
+    }
+
+    .photos div:last-of-type img {
+        border-top: solid 5px #092532;
+        border-right: solid 5px #092532;
+        border-left: solid 5px #092532;
+        box-shadow: 0px 10px 15px 5px hsla(164, 37%, 66%, 0.2);
+        width: 90%;
+        margin: 5% auto;
+        border-bottom: none;
+    }
+
+ 
+
+    .photos div:first-of-type p, .photos div:last-of-type p{
+        border-top: none;
+        border-bottom: solid 3px #092532;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0px -10px 15px 5px hsla(164, 37%, 66%, 0.2);
+        width: 90%;
     }
 
     .photos div:last-of-type p {
         order: 2;
     }
+
     /* FOOTER */
 
 footer {
@@ -449,4 +550,24 @@ footer .nav-links a {
     letter-spacing: 1px;
 
 }
+}
+
+/* YET ANOTHER MEDIA QUERY FOR BOTTOM TEXT BOX FIX */
+
+@media (max-width: 400px) {
+    .photos div:first-of-type p, .photos div:last-of-type p {
+        height: 40%;
+        font-size: 1.7rem;
+        letter-spacing: .2rem;
+    }
+}
+
+
+/* MEDIA QUERY FOR TEAM PIX SINGLE ROW */
+
+@media (max-width: 376px) {
+    
+    .team-photos div {
+        width: 90%;
+    }
 }
