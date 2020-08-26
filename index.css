@@ -99,7 +99,7 @@ header nav a:hover {
 /* MAIN */
 
 .welcome {
-    height: 75vh;
+    height: 60vh;
     text-align: center;
     margin-top: 8%;
     font-family: Roboto;
@@ -125,6 +125,17 @@ header nav a:hover {
 .welcome h3 {
     font-size: 2.5rem;
     margin: 2% 0;
+    line-height: 3.3rem;
+}
+
+.italics {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+.shadow {
+    text-shadow: 2px 2px 5px #89c9b8;
 }
 
 .welcome p {
@@ -157,7 +168,7 @@ color: #092532;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 175vh;
+    height: 150vh;
 }
 
 .photos div {
@@ -167,7 +178,9 @@ color: #092532;
 
 .photos div p {
     font-family: Roboto;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+    font-style: italic;
     margin: 4% 0;
     color: #092532;
     display: inline-block;

@@ -109,6 +109,8 @@ h2 {
     font-size: 5rem;
     margin-top: 5%;
     color: #092532;
+    font-weight: 700;
+    text-shadow: 3px 2px 5px #e1ffc2;
 }
 
 h3 {
@@ -118,6 +120,11 @@ h3 {
     margin: 2% auto;
     color: #092532;
     letter-spacing: 2.5px;
+    text-shadow: 3px 2px 5px #89c9b8;
+}
+
+.smallerh3 {
+    font-size: 2rem;
 }
 
 .team-photos div p {
@@ -155,7 +162,7 @@ h3 {
     margin: 10% 10%;
     color: #092532;
     transition-property: color;
-    transition-delay: 50ms;
+    transition-delay: 20ms;
     transition-duration: 300ms;
 }
 
