@@ -63,6 +63,8 @@ header {
     align-items: center;
 }
 
+
+/*Logo for header */
 h1 {
     font-family: Montserrat;
     margin-left: 3%;
@@ -73,6 +75,7 @@ h1 {
     align-self: flex-start;
 }
 
+/*nav bar */
 header nav {
     align-self: flex-end;
     margin-bottom: 1%;
@@ -80,6 +83,7 @@ header nav {
     width: 60%;
 }
 
+/*links in navbar */
 header nav a {
     display: inline-block;
     text-decoration: none;
@@ -95,6 +99,7 @@ header nav a {
     transition-duration: 300ms;
 }
 
+/*header navlinks hover effect */
 header nav a:hover {
     background-color: #092532;
     color: #89c9b8;
@@ -102,7 +107,7 @@ header nav a:hover {
 
 /* TEAM PHOTOS */
 
-
+/*"meet the team!"*/
 h2 {
     text-align: center;
     font-family: Montserrat;
@@ -110,9 +115,10 @@ h2 {
     margin-top: 5%;
     color: #092532;
     font-weight: 700;
-    text-shadow: 3px 2px 5px #e1ffc2;
+    text-shadow: 3px 2px 5px #89c9b8;
 }
 
+/*team member's name*/
 h3 {
     font-size: 2.9rem;
     font-weight: 700;
@@ -123,10 +129,12 @@ h3 {
     text-shadow: 3px 2px 5px #89c9b8;
 }
 
+/*team member's role*/
 .smallerh3 {
     font-size: 2rem;
 }
 
+/*team member's info*/
 .team-photos div p {
     font-family: roboto;
     display: inline-block;
@@ -139,6 +147,8 @@ h3 {
     background-color: #dffff6;
     border: solid 3px #092532;
 }
+
+/*container for team info flexbox area */
 .team-photos {
     margin-top: 5%;
     display: flex;
@@ -146,6 +156,7 @@ h3 {
     justify-content: space-around;
 }
 
+/*divs in flexbox area*/
 .team-photos div {
     margin-top: 5%;
     text-align: center;
@@ -157,6 +168,7 @@ h3 {
     height: auto;
 }
 
+/*icons*/
 .fab {
     transform: scale(4);
     margin: 10% 10%;
@@ -166,6 +178,7 @@ h3 {
     transition-duration: 300ms;
 }
 
+/*icons hover effect*/
 .fab:hover {
     color: #89c9b8;
 }
@@ -174,73 +187,77 @@ h3 {
 
 /* 2ND PHOTO AREA */
 
-
+/*container for side-by-side photo/caption area*/
 .photos {
-    display: flex;
-    flex-wrap: wrap;
     width: 95%;
     margin: 8% auto;
-    justify-content: space-between;
 }
 
-.photos div {
+.photos div:first-of-type {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: flex-start;
+    margin-bottom: 8%;
 }
 
-.photos div img {
+.photos div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.photos img {
     height: 75%;
     width: 50%;
 }
 
+.photos div p {
+    margin: 1% auto;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-family: roboto;
+    color: #092532;
+    display: inline-block;
+    line-height: 2.9rem;
+}
+
+/*top side by side div*/
 .photos div:first-of-type img {
     box-shadow: 5px 5px 15px 4px #89c9b8;
     border-top: solid 3px #092532;
     border-left: solid 3px #092532;
 }
 
+.photos div:first-of-type p {
+    border-top: solid 3px #092532;
+    border-right: solid 3px #092532;
+    align-self: stretch;
+    padding-top: 4%;
+    background-color: hsla(164, 37%, 66%, 0.2);
+    box-shadow: -5px 5px 10px 1px hsla(164, 37%, 66%, 0.2);
+    margin-left: 4%;
+}
+
+/*bottom side by side div*/
 .photos div:last-of-type img {
     box-shadow: -5px -5px 15px 4px #89c9b8;
     border-bottom: solid 4px #092532;
     border-right: solid 4px #092532;
 }
 
-.photos div p {
-    margin: 1% auto;
-    display: inline-block;
-    width: 35%;
-    font-size: 2.3rem;
-    font-family: roboto;
-    color: #092532;
-    display: inline-block;
-    height: 30%;
-    line-height: 2.9rem;
-}
-
-.photos div:first-of-type p {
-    margin-top: 5%;
-    border-top: solid 3px #092532;
-    border-right: solid 3px #092532;
-    padding: 1%;
-    height: 50%;
-    display: inline-block;
-    background-color: hsla(164, 37%, 66%, 0.2);
-    box-shadow: -5px 5px 10px 1px hsla(164, 37%, 66%, 0.2);
-}
-
 .photos div:last-of-type p {
-    margin-top: 0;
     border-left: solid 3px #092532;
     border-bottom: solid 3px #092532;
-    padding: 1%;
-    height: 50%;
+    padding-left: 1%;
+    padding-top: 7%;
+    align-self: stretch;
     display: inline-block;
     background-color: hsla(164, 37%, 66%, 0.2);
     box-shadow: 5px -5px 10px 1px hsla(164, 37%, 66%, 0.2);
+    margin-right: 4%;
 }
- /* "FEEL FREE TO REACH OUT TO US LINK */
 
+ /* "reach out to us" link */
 .here {
     text-decoration: none;
     color: #092532;
@@ -250,6 +267,7 @@ h3 {
     transition-duration: 250ms;
 }
 
+/*"reach out to us" link hover effect*/
 .here:hover {
 text-shadow: 1px 1px 3px #092532;
 }
@@ -262,6 +280,7 @@ footer {
     text-align: right;
 }
 
+/*footer logo*/
 footer p {
     font-family: Montserrat;
     margin-left: 3%;
@@ -272,11 +291,12 @@ footer p {
     padding: 2%;
 }
 
-footer .nav-links {
+footer nav {
     display: flex;
 }
 
-footer .nav-links a {
+/*footer navlinks*/
+footer nav a {
     color: #89c9b8;
     text-decoration: none;
     margin: 0 2%;
@@ -288,13 +308,16 @@ footer .nav-links a {
     transition-duration: 400ms;
 }
 
-footer .nav-links a:hover {
+/*footer navlinks hover*/
+footer nav a:hover {
 color: #e1ffc2;
 }
 
 /* MEDIA QUERY FOR HEADER FIX */
 
 @media (max-width: 1308px) {
+
+    /* HEADER */
 
     header {
         width: 100%;
@@ -305,11 +328,14 @@ color: #e1ffc2;
         align-items: center;
     }
     
+
+    /*centering logo*/
     h1 {
         font-size: 5rem;
         align-self: center;
     }
     
+    /*spreading out links*/
     header nav {
         align-self: center;
         margin-bottom: 1%;
@@ -329,41 +355,6 @@ color: #e1ffc2;
     }
 }
 
-/* MEDIA QUERY FOR BOTTOM TEXT BOXES FIX */
-
-@media (max-width: 1138px) {
-
-    .photos div:first-of-type p {
-        margin-top: 5%;
-        padding: 1%;
-        height: 60%;
-    }
-
-    .photos div:last-of-type p {
-        margin-top: 0;
-        padding-top: 5%;
-        height: 75%;
-    }
-}
-
-/* 2ND MEDIA QUERY FOR BOTTOM TEXT BOXES FIT */
-
-@media (max-width: 1030px) {
-
-    .photos div:first-of-type p {
-        margin-top: 0;
-        padding: 1%;
-        height: 60%;
-        font-size: 1.7rem;
-    }
-
-    .photos div:last-of-type p {
-        margin-top: 0;
-        padding-top: 2%;
-        height: 60%;
-        font-size: 1.7rem;
-    }
-}
 
 
 /* MEDIA QUERY FOR TABLET */
@@ -371,77 +362,57 @@ color: #e1ffc2;
 
     /* TEAM PHOTOS AREA */
 
+    /*icons size adjustment*/
     .fab {
         transform: scale(3.2);
     }
 
+    /*decreasing number of columns*/
     .team-photos div {
         width: 48%;
     }
 
     /* 2nd PHOTOS AREA */
 
+    /*fixing sizing for pics/paragraphs at bottom*/
     .photos div {
         margin-top: 5%;
     }
 
     .photos div p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 30vh;
+    }
+
+    /*centering links in footer*/
+    footer nav a {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    /*centering logo in footer*/
+    footer p {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .photos div:first-of-type p, .photos div:last-of-type p {
         font-size: 1.7rem;
         line-height: 2rem;
     }
-
-        /* FOOTER */
-
-        footer {
-            height: 30vh;
-        }
-        footer nav a {
-            text-align: center;
-            font-size: 1.5rem;
-        }
-    
-        footer p {
-            text-align: center;
-            margin-bottom: 3%;
-        }
-        
-
-}
-
-/* MEDIA QUERY FOR BOTTOM TEXT BOX FIX */
-
-@media (max-width: 700px) {
-
-    .photos div:first-of-type p {
-
-        height: 75%;
-        font-size: 1.5rem;
-    }
-
     .photos div:last-of-type p {
-
-        height: 75%;
-        font-size: 1.5rem;
+        padding-bottom: 2%;
     }
 }
-
-/* MEDIA QUERY FOR BOTTOM TEXT BOX FIX */
-
-@media (max-width: 611px) {
-    .photos div:first-of-type p {
-        margin-top: 0;
-        padding: 1%;
-        height: 87%;
-        font-size: 1.4rem;
-    }
-
-    .photos div:last-of-type p {
-        margin-top: 0;
-        height: 87%;
-        font-size: 1.4rem;
-    }
-}
-
 /* MEDIA QUERY FOR MOBILE */
 
 @media (max-width: 480px) {
@@ -449,9 +420,10 @@ color: #e1ffc2;
     /* HEADER */ 
 
     header {
-        height: 40vh;
+        height: 42vh;
     }
     
+    /*centering logo in header*/
     h1 {
         margin: 1% 0;
         font-size: 3rem;
@@ -459,6 +431,7 @@ color: #e1ffc2;
         align-self: center;
     }
     
+    /*changing links in navbar to be a column*/
     header nav {
         align-self: center;
         margin-bottom: 1%;
@@ -478,12 +451,14 @@ color: #e1ffc2;
 
     /* TEAM PHOTOS AREA */
 
+    /*making the team photos area one column*/
     .team-photos div {
         width: 90%;
     }
 
     /* 2nd PHOTOS AREA */
 
+    /*changing the layout of bottom photo/caption area to one column*/
     .photos {
         height: 800px;
     }
@@ -498,6 +473,7 @@ color: #e1ffc2;
         font-size: 1.7rem;
     }
 
+    /*changing border/box shadow effect*/
     .photos div:first-of-type img {
         border-top: solid 5px #092532;
         border-right: solid 5px #092532;
@@ -534,39 +510,52 @@ color: #e1ffc2;
 
     /* FOOTER */
 
-footer {
-    height: 35vh;
-    text-align: center;
+    footer {
+        height: 35vh;
+        text-align: center;
+    }
+
+    /*centering footer logo*/
+    footer p {
+        margin: 2% 0;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        padding: 2%;
+    }
+
+    /*changing display of links from row to column*/
+    footer nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer nav a {
+        margin: 1.7% auto;
+        font-size: 2rem;
+        letter-spacing: 1px;
+
+    }
 }
 
-footer p {
-    margin: 2% 0;
-    font-size: 3rem;
-    letter-spacing: 3px;
-    padding: 2%;
-}
-
-footer .nav-links {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-footer .nav-links a {
-    margin: 1.7% auto;
-    font-size: 2rem;
-    letter-spacing: 1px;
-
-}
-}
-
-/* YET ANOTHER MEDIA QUERY FOR BOTTOM TEXT BOX FIX */
+/*YET ANOTHER MEDIA QUERY FOR BOTTOM TEXT BOX FIX*/
 
 @media (max-width: 400px) {
     .photos div:first-of-type p, .photos div:last-of-type p {
         height: 40%;
         font-size: 1.7rem;
         letter-spacing: .2rem;
+    }
+}
+
+/*MEDIA QUERY FOR BOTTOM TEXT AND HEADER LOGO FIX*/
+@media (max-width: 271px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    .photos div:first-of-type p, .photos div:last-of-type p {
+        font-size: 1.3rem;
     }
 }
 
