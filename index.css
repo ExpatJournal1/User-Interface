@@ -59,6 +59,7 @@ header {
     align-items: center;
 }
 
+/* logo at top of page */
 h1 {
     font-family: Montserrat;
     margin-left: 3%;
@@ -69,12 +70,16 @@ h1 {
     align-self: flex-start;
 }
 
+/* Navigation bar */
+
 header nav {
     align-self: flex-end;
     margin-bottom: 1%;
     margin-right: 0;
     width: 85%;
 }
+
+/* Navigation Links */
 
 header nav a {
     display: inline-block;
@@ -93,14 +98,23 @@ header nav a {
     transition-duration: 400ms;
 }
 
+/* navigation links hover effect */
+
 header nav a:hover {
     background-color: #092532;
     color: #89c9b8;
 }
 
+
 /* MAIN */
 
+.welcome {
+    text-align: center;
+    margin: 8% auto;
+    font-family: Roboto;
+}
 
+/* parallax background effect */
 .parallax {
 background-image: url(photos/img1.jpg);
 background-size: cover;
@@ -112,33 +126,33 @@ width: 70%;
 padding: 8%;
 }
 
-
-.welcome {
-    text-align: center;
-    margin: 8% auto;
-    font-family: Roboto;
-}
-
+/* test inside parallax background */
 .welcome h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 6rem;
     letter-spacing: 2px;    
     color: white;
     text-shadow: 3px 3px 2px black, -3px -3px 2px black;
 }
 
+/* "point of view" text */
+.italics {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+
+/* text area under parallax */
 .welcome div:last-of-type {
+    border-top: solid #092532 8px;
+    border-left: solid #092532 8px;
+    border-right: solid #092532 8px;
     margin: 5% auto;
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-/* "point of view" text ---> */ .italics {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 4rem;
+    box-shadow: 0px -12px 20px 1px #aee4d6;
 }
 
 .welcome div:last-of-type p {
@@ -148,6 +162,7 @@ padding: 8%;
     margin: 2% auto;
 }
 
+/* sign up now button */
 .welcome a {
     text-decoration: none;
     display: inline-block;
@@ -163,6 +178,7 @@ padding: 8%;
     border: solid 1px white;
 }
 
+/* hover effect for sign up now button */
 .welcome a:hover {
 background-color: #e1ffc2;
 color: #092532;
@@ -171,6 +187,7 @@ color: #092532;
 
 /* PHOTO GRID AREA */
 
+/* entire section */
 .photos {
     display: flex;
     flex-wrap: wrap;
@@ -179,11 +196,13 @@ color: #092532;
     margin: auto;
 }
 
+/*individual flexbox items */
 .photos div {
     width: 29%;
     text-align: center;
 }
 
+/* captions under pictures */
 .photos div p {
     font-family: Roboto;
     font-weight: 700;
@@ -199,7 +218,8 @@ color: #092532;
     width: 80%;
 }
 
-/* shadow effect for photo captions --> */ .shadow {
+/* shadow effect for photo captions*/ 
+.shadow {
     text-shadow: 2px 2px 3px hsla(164, 37%, 66%, 0.9)
 }
 
@@ -211,6 +231,7 @@ footer {
     text-align: right;
 }
 
+/* bottom logo */
 footer p {
     font-family: Montserrat;
     margin-left: 3%;
@@ -225,6 +246,7 @@ footer nav {
     display: flex;
 }
 
+/*links in footer */
 footer nav a {
     color: #89c9b8;
     text-decoration: none;
@@ -237,9 +259,14 @@ footer nav a {
     transition-duration: 400ms;
 }
 
+/*hover effect for footer navbar links */
 footer nav a:hover {
 color: #e1ffc2;
 }
+
+
+
+
 
 /* MEDIA QUERY FOR HEADER/FOOTER FIX */
 
@@ -255,11 +282,13 @@ color: #e1ffc2;
         align-items: center;
     }
     
+    /* centering logo at top of page */
     h1 {
         font-size: 5rem;
         align-self: center;
     }
     
+    /* spreading out links at top of page */
     header nav {
         align-self: center;
         margin-bottom: 1%;
@@ -287,29 +316,36 @@ color: #e1ffc2;
 
     /* HEADER */
 
+    /* creating space around logo */
     h1 {
         margin: 1% auto;
     }
+
     /* WELCOME AREA */
 
+    /* make parallax area more narrow */
     .parallax {
         width: 70%;
     }
 
+    /*font size change in parallax area */
     .parallax h2 {
         font-size: 3.5rem;
         line-height: 5rem;
     }
-
+    
+    /* "point of view" font size */
     .italics {
         font-size: 3.5rem;
     }
 
-
+    /* area under parallax font size change and width change of container */
     .welcome div:last-of-type {
         width: 90%;
         font-size: 2.5rem;
     }
+
+    /*photo grid area column amount change*/
     .photos {
         width: 90%;
         margin: auto;
@@ -320,106 +356,122 @@ color: #e1ffc2;
 
     /* FOOTER */
 
+    /*centering logo at bottom */
     footer p {
         text-align: center;
         font-size: 4.5rem;
         margin: 2%;
     }
 
+    /*spacing out links in footer */
     footer nav {
         display: flex;
         justify-content: space-around;
     }
+
     footer nav a {
         text-align: center;
     }
 }
 
+
+/*mobile media query*/
 @media (max-width: 528px) {
 
-        /* HEADER */ 
+    /* HEADER */ 
 
-        header {
-            height: 41vh;
-        }
-        
-        h1 {
-            margin-top: 3%;
-            font-size: 3rem;
-            letter-spacing: 3px;
-            align-self: center;
-        }
-        
-        header nav {
-            align-self: center;
-            margin-bottom: 1%;
-            margin-right: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        header nav a {
-            width: 50%;
-            font-size: 2rem;
-            padding: .5% 0;
-            margin: 2.2% auto;
-            text-align: center;
-        }
-
-        /* WELCOME AREA */
-
-
-        .parallax {
-            background-color: white;
-            background-image: none;
-        }
-
-        .parallax h2 {
-            color: #092532;
-            text-shadow: none;
-            line-height: 3.9rem;
-        }
-
-        .welcome p {
-            font-size: 2rem;
-        }
+    header {
+        height: 41vh;
+    }
     
-        /* PHOTO AREA */
+    /*logo in header */
+    h1 {
+        margin-top: 3%;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        align-self: center;
+    }
+        
+    /*header navbar*/
+    header nav {
+        align-self: center;
+        margin-bottom: 1%;
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    /*header links*/
+    header nav a {
+        width: 50%;
+        font-size: 2rem;
+        padding: .5% 0;
+        margin: 2.2% auto;
+        text-align: center;
+    }
 
-        .photos div {
-            width: 90%;
-            margin:  auto;
-        }
+    /* WELCOME AREA */
 
-        .photos div p {
-            margin: 8% auto;
-        }
+    /* removing parallax effect for mobile*/
+    .parallax {
+        background-color: white;
+        background-image: none;
+        width: 90%;
+    }
 
-        /* FOOTER */
+    /* changing color/size of font that was inside parallax effect*/
+    .parallax h2, .italics {
+        color: #092532;
+        text-shadow: none;
+        line-height: 3.9rem;
+        font-size: 2.7rem;
+    }
 
-footer {
-    height: 38vh;
-    text-align: center;
-}
+    .welcome {
+        margin-bottom: 15%;
+    }
+ 
+    
+    /* PHOTO AREA */
 
-footer p {
-    margin: 2% 0;
-    font-size: 3rem;
-    letter-spacing: 3px;
-    padding: 2%;
-}
+    /* changing number of columns for photo grid */
+    .photos div {
+        width: 90%;
+        margin:  auto;
+    }
 
-footer nav {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-}
+    /*more space between captions and photos */
+    .photos div p {
+        margin: 8% auto;
+    }
 
-footer nav a {
-    margin: 1.7% auto;
-    font-size: 2rem;
-    letter-spacing: 1px;
+    /* FOOTER */
 
-}
+    footer {
+        height: 38vh;
+        text-align: center;
+    }
+
+    /* logo in footer size change */
+    footer p {
+        margin: 2% 0;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        padding: 2%;
+    }
+
+    /*changing links from row to column for mobile */
+    footer nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer nav a {
+        margin: 1.7% auto;
+        font-size: 2rem;
+        letter-spacing: 1px;
+
+    }
 }
