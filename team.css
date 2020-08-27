@@ -55,7 +55,7 @@ img {
 
 header {
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     background-color: #092532;
     color: white;
     display: flex;
@@ -63,8 +63,7 @@ header {
     align-items: center;
 }
 
-
-/*Logo for header */
+/* logo at top of page */
 h1 {
     font-family: Montserrat;
     margin-left: 3%;
@@ -75,17 +74,21 @@ h1 {
     align-self: flex-start;
 }
 
-/*nav bar */
+/* Navigation bar */
+
 header nav {
     align-self: flex-end;
     margin-bottom: 1%;
     margin-right: 0;
-    width: 60%;
+    width: 85%;
 }
 
-/*links in navbar */
+/* Navigation Links */
+
 header nav a {
     display: inline-block;
+    width: 13.7%;
+    text-align: center;
     text-decoration: none;
     font-family: Montserrat;
     font-size: 2.5rem;
@@ -95,11 +98,12 @@ header nav a {
     padding: 1%;
     margin: 1% 2%;
     transition-property: color background-color;
-    transition-duration: 30ms;
-    transition-duration: 300ms;
+    transition-duration: 50ms;
+    transition-duration: 400ms;
 }
 
-/*header navlinks hover effect */
+/* navigation links hover effect */
+
 header nav a:hover {
     background-color: #092532;
     color: #89c9b8;
