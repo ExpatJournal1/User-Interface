@@ -216,11 +216,12 @@ h3 {
 .photos div p {
     margin: 1% auto;
     display: inline-block;
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     font-family: roboto;
     color: #092532;
     display: inline-block;
-    line-height: 2.9rem;
+    line-height: 4.5rem;
+    text-align: center;
 }
 
 /*top side by side div*/
@@ -251,7 +252,7 @@ h3 {
     border-left: solid 3px #092532;
     border-bottom: solid 3px #092532;
     padding-left: 1%;
-    padding-top: 7%;
+    padding-top: 2%;
     align-self: stretch;
     display: inline-block;
     background-color: hsla(164, 37%, 66%, 0.2);
@@ -358,6 +359,12 @@ color: #e1ffc2;
     }
 }
 
+/*bottom pics/captions fix */
+@media (max-width: 1090px) {
+.photos div p {
+    font-size: 2.5rem;
+}
+
 
 
 /* MEDIA QUERY FOR TABLET */
@@ -393,15 +400,22 @@ color: #e1ffc2;
         height: 30vh;
     }
 
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     /*centering links in footer*/
     footer nav a {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2.3rem;
     }
     
     /*centering logo in footer*/
     footer p {
         text-align: center;
+        font-size: 4.5rem;
         margin-bottom: 3%;
     }
 }
@@ -561,6 +575,4 @@ color: #e1ffc2;
         font-size: 1.3rem;
     }
 }
-
-
-
+}
