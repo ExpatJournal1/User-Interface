@@ -46,54 +46,58 @@ table {
 html {
     font-size: 62.5%;
 }
- /* HEADER */
+  /* HEADER */
 
- header {
-     height: 25vh;
-     background-color: #092532;
-     display: flex;
-     justify-content: space-between;
- }
+  header {
+    height: 25vh;
+    background-color: #092532;
+    display: flex;
+    justify-content: space-between;
+}
 
- h1 {
+/*logo*/
+.logo {
+   display: inline-block;
+   margin-top: 3%;
+   font-size: 5.5rem;
+   font-family: Montserrat;
+   color: #89c9b8;
+   letter-spacing: 3px;
+   margin-left: 1%;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+/*navbar*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1%;
+    margin-right: .5%;
+    width: 65%;
+}
+
+/*navbar links*/
+header nav a {
     display: inline-block;
-    margin-top: 3%;
-    font-size: 5.5rem;
+    padding: 1% 2%;
+    border-radius: 12px;
+    background-color: #89c9b8;
     font-family: Montserrat;
-    color: #89c9b8;
-    letter-spacing: 3px;
-    margin-left: 1%;
-    font-weight: 700;
- }
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0 .5%;
+    width: 27%;
+    text-align: center;
+    text-decoration: none;
+    color: #092532;
+    transition: color background-color;
+    transition-delay: 75ms;
+    transition-duration: 300ms;
+}
 
- header nav {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-end;
-     margin-bottom: 1%;
-     margin-right: .5%;
-     width: 65%;
- }
-
- header nav a {
-     display: inline-block;
-     padding: 1% 2%;
-     border-radius: 12px;
-     background-color: #89c9b8;
-     font-family: Montserrat;
-     font-size: 2.5rem;
-     text-decoration: none;
-     margin: 0 .5%;
-     width: 27%;
-     text-align: center;
-     text-decoration: none;
-     color: #092532;
-     transition: color background-color;
-     transition-delay: 75ms;
-     transition-duration: 300ms;
- }
-
- /*navbar links hover effect*/
+/*navbar links hover effect*/
 header nav a:hover {
     color: #89c9b8;
     background-color: #092532;
@@ -120,7 +124,7 @@ padding: 8%;
 }
 
 /* test inside parallax background */
-.welcome h2 {
+h1 {
     font-size: 4.5rem;
     line-height: 6rem;
     letter-spacing: 2px;    
@@ -224,8 +228,8 @@ footer {
     text-align: right;
 }
 
-/* bottom logo */
-footer p {
+/*footer logo*/
+footer .logo {
     font-family: Montserrat;
     margin-left: 3%;
     font-size: 5.5rem;
@@ -240,7 +244,7 @@ footer nav {
     display: flex;
 }
 
-/*links in footer */
+/*footer navlinks*/
 footer nav a {
     color: #89c9b8;
     text-decoration: none;
@@ -253,7 +257,7 @@ footer nav a {
     transition-duration: 400ms;
 }
 
-/*hover effect for footer navbar links */
+/*footer navlinks hover*/
 footer nav a:hover {
 color: #e1ffc2;
 }
@@ -267,6 +271,7 @@ color: #e1ffc2;
 @media (max-width: 1308px) {
 
     /* HEADER */
+
     header {
         width: 100%;
         height: 30vh;
@@ -276,13 +281,14 @@ color: #e1ffc2;
         align-items: center;
     }
     
-    /* centering logo at top of page */
-    h1 {
+
+    /*centering logo*/
+    header .logo {
         font-size: 5rem;
         align-self: center;
     }
     
-    /* spreading out links at top of page */
+    /*spreading out links*/
     header nav {
         align-self: center;
         margin-bottom: 1%;
@@ -301,19 +307,14 @@ color: #e1ffc2;
         text-align: center;
     }
 
+    footer {
+        text-align: center;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS */
 
 @media (max-width: 935px) {
-
-
-    /* HEADER */
-
-    /* creating space around logo */
-    h1 {
-        margin: 1% auto;
-    }
 
     /* WELCOME AREA */
 
@@ -323,7 +324,7 @@ color: #e1ffc2;
     }
 
     /*font size change in parallax area */
-    .parallax h2 {
+    h1 {
         font-size: 3.5rem;
         line-height: 5rem;
     }
@@ -350,21 +351,27 @@ color: #e1ffc2;
 
     /* FOOTER */
 
-    /*centering logo at bottom */
-    footer p {
-        text-align: center;
-        font-size: 4.5rem;
-        margin: 2%;
+    footer {
+        height: 30vh;
     }
 
-    /*spacing out links in footer */
     footer nav {
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
+    /*centering links in footer*/
     footer nav a {
         text-align: center;
+        font-size: 2.3rem;
+    }
+    
+    /*centering logo in footer*/
+    footer .logo {
+        text-align: center;
+        font-size: 4.5rem;
+        margin-bottom: 3%;
     }
 }
 
@@ -375,18 +382,18 @@ color: #e1ffc2;
     /* HEADER */ 
 
     header {
-        height: 41vh;
+        height: 42vh;
     }
     
-    /*logo in header */
-    h1 {
-        margin-top: 3%;
+    /*centering logo in header*/
+    header .logo {
+        margin-top: 1%;
         font-size: 3rem;
         letter-spacing: 3px;
         align-self: center;
     }
-        
-    /*header navbar*/
+    
+    /*changing links in navbar to be a column*/
     header nav {
         align-self: center;
         margin-bottom: 1%;
@@ -395,8 +402,7 @@ color: #e1ffc2;
         display: flex;
         flex-direction: column;
     }
-        
-    /*header links*/
+    
     header nav a {
         width: 50%;
         font-size: 2rem;
@@ -411,17 +417,19 @@ color: #e1ffc2;
     .parallax {
         background-color: white;
         background-image: none;
-        width: 90%;
     }
 
     /* changing color/size of font that was inside parallax effect*/
-    .parallax h2, .italics {
+    h1, .italics {
         color: #092532;
         text-shadow: none;
         line-height: 3.9rem;
         font-size: 2.7rem;
     }
 
+    .welcome div:last-of-type p {
+        font-size: 2rem;
+    }
     .welcome {
         margin-bottom: 15%;
     }
@@ -443,19 +451,19 @@ color: #e1ffc2;
     /* FOOTER */
 
     footer {
-        height: 38vh;
+        height: 35vh;
         text-align: center;
     }
 
-    /* logo in footer size change */
-    footer p {
+    /*centering footer logo*/
+    footer .logo {
         margin: 2% 0;
         font-size: 3rem;
         letter-spacing: 3px;
         padding: 2%;
     }
 
-    /*changing links from row to column for mobile */
+    /*changing display of links from row to column*/
     footer nav {
         flex-direction: column;
         flex-wrap: wrap;
@@ -463,9 +471,10 @@ color: #e1ffc2;
     }
 
     footer nav a {
-        margin: 1.7% auto;
+        margin: 1.2% auto;
         font-size: 2rem;
         letter-spacing: 1px;
 
     }
 }
+
